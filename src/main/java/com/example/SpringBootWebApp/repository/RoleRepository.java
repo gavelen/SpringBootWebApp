@@ -1,7 +1,9 @@
 package com.example.SpringBootWebApp.repository;
 
+import com.example.SpringBootWebApp.model.Role;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RoleRepository {
+public interface RoleRepository extends CrudRepository<Role, Long> {
 }
